@@ -1,8 +1,12 @@
 var ID = '_id'
 var modifiedID = false
 
-var create = (array, init) => {
-  init = init || {}
+var create = (array, id) => {
+  if (id) {
+    modifiedID = true
+  }
+
+  id = id || ID
 
   if (Array.isArray(array)) {
     return array.reduce((obj, item) => {
@@ -15,16 +19,10 @@ var create = (array, init) => {
 
       obj[item[id]] = item
       return obj
-    }, init)
+    }, {})
   }
 
   return null
-}
-
-create.setID = (id) => {
-  modifiedID = true
-  ID = id
-  return create
 }
 
 module.exports = create

@@ -1,6 +1,6 @@
 {
   "name": "idhash",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Create object hash from array of objects and their ids",
   "main": "src/index.js",
   "scripts": {
