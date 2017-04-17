@@ -1,0 +1,26 @@
+{
+  "name": "idhash",
+  "version": "1.0.0",
+  "description": "Create object hash from array of objects and their ids",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jsifalda/idhash.git"
+  },
+  "keywords": [
+    "id",
+    "hash",
+    "objects",
+    "reduce",
+    "map"
+  ],
+  "author": "@jsifalda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsifalda/idhash/issues"
+  },
+  "homepage": "https://github.com/jsifalda/idhash#readme"
+}
