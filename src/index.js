@@ -1,3 +1,5 @@
+var isPlainObject = require('is-plain-object')
+
 var ID = '_id'
 var modifiedID = false
 
@@ -9,7 +11,11 @@ var create = (array, id) => {
   id = id || ID
 
   if (Array.isArray(array)) {
-    return array.reduce((obj, item) => {
+    return array
+    .filter((item) => {
+      return isPlainObject(item)
+    })
+    .reduce((obj, item) => {
       var id = ID
       if (!modifiedID) {
         if (!item[id]) {

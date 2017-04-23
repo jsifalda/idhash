@@ -1,6 +1,6 @@
 {
   "name": "idhash",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create object hash from array of objects and their ids",
   "main": "src/index.js",
   "scripts": {
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jsifalda/idhash/issues"
   },
-  "homepage": "https://github.com/jsifalda/idhash#readme"
+  "homepage": "https://github.com/jsifalda/idhash#readme",
+  "dependencies": {
+    "is-plain-object": "2.0.1"
+  }
 }
