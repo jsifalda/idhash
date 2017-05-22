@@ -16,7 +16,6 @@ var create = (array, id) => {
       return isPlainObject(item)
     })
     .reduce((obj, item) => {
-      var id = ID
       if (!modifiedID) {
         if (!item[id]) {
           id = 'id'
