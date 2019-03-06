@@ -1,6 +1,6 @@
 {
   "name": "idhash",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Create object hash from array of objects and their ids",
   "main": "lib/index.js",
   "scripts": {
@@ -11,7 +11,13 @@
     "type": "git",
     "url": "git+ssh://git@github.com/jsifalda/idhash.git"
   },
-  "keywords": ["id", "hash", "objects", "reduce", "map"],
+  "keywords": [
+    "id",
+    "hash",
+    "objects",
+    "reduce",
+    "map"
+  ],
   "author": "@jsifalda",
   "license": "ISC",
   "bugs": {
@@ -19,7 +25,8 @@
   },
   "homepage": "https://github.com/jsifalda/idhash#readme",
   "dependencies": {
-    "is-plain-object": "2.0.1"
+    "is-plain-object": "2.0.1",
+    "ramda": "^0.26.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
